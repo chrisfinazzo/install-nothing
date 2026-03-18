@@ -38,6 +38,15 @@ cargo run --release -- deno
 cargo run --release -- --all
 ```
 
+## Docker
+
+Build and run:
+
+```bash
+docker build -t install-nothing .
+docker run -it --rm --init install-nothing
+```
+
 See available stages:
 ```bash
 cargo run --release -- --help
