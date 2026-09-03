@@ -24,6 +24,10 @@ pub enum Stage {
     Kernel,
     /// Compilation
     Compilation,
+    /// GNU autotools configure and build
+    Autotools,
+    /// CMake project build
+    Cmake,
     /// Deno runtime compilation
     Deno,
     /// Database setup
@@ -59,6 +63,8 @@ impl Stage {
             Stage::Packages,
             Stage::Kernel,
             Stage::Compilation,
+            Stage::Autotools,
+            Stage::Cmake,
             Stage::Deno,
             Stage::Database,
             Stage::Xorg,

@@ -3,6 +3,8 @@ use std::ops::Range;
 #[derive(Clone)]
 pub struct SimulationConfig {
     pub ai: AiConfig,
+    pub autotools: AutotoolsConfig,
+    pub cmake: CmakeConfig,
     pub cloud: CloudConfig,
     pub container: ContainerConfig,
     pub bios: BiosConfig,
@@ -14,6 +16,8 @@ impl Default for SimulationConfig {
     fn default() -> Self {
         Self {
             ai: AiConfig::default(),
+            autotools: AutotoolsConfig::default(),
+            cmake: CmakeConfig::default(),
             cloud: CloudConfig::default(),
             container: ContainerConfig::default(),
             bios: BiosConfig::default(),
@@ -221,6 +225,48 @@ impl Default for ContainerConfig {
             probability_secret_mount: 0.3,
             probability_sidecar_injection: 0.6,
             layer_pull_speed_range: 150..2500,
+        }
+    }
+}
+
+#[derive(Clone)]
+pub struct AutotoolsConfig {
+    pub failure_rate: f64,
+    pub check_delay_range: Range<u64>,
+    pub compile_delay_range: Range<u64>,
+    pub link_duration_range: Range<u64>,
+    pub retry_delay: u64,
+}
+
+impl Default for AutotoolsConfig {
+    fn default() -> Self {
+        Self {
+            failure_rate: 0.25,
+            check_delay_range: 15..70,
+            compile_delay_range: 40..180,
+            link_duration_range: 400..1200,
+            retry_delay: 1500,
+        }
+    }
+}
+
+#[derive(Clone)]
+pub struct CmakeConfig {
+    pub failure_rate: f64,
+    pub probe_delay_range: Range<u64>,
+    pub build_delay_range: Range<u64>,
+    pub link_duration_range: Range<u64>,
+    pub retry_delay: u64,
+}
+
+impl Default for CmakeConfig {
+    fn default() -> Self {
+        Self {
+            failure_rate: 0.3,
+            probe_delay_range: 30..120,
+            build_delay_range: 60..220,
+            link_duration_range: 600..1800,
+            retry_delay: 1500,
         }
     }
 }

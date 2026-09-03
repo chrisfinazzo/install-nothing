@@ -1,8 +1,10 @@
 mod ai;
+mod autotools;
 mod bios;
 mod boot;
 mod bootloader;
 mod cloud;
+mod cmake;
 mod compilation;
 mod container;
 mod database;
@@ -23,10 +25,12 @@ use crate::cli::Stage;
 use std::io;
 
 pub use ai::AiStage;
+pub use autotools::AutotoolsStage;
 pub use bios::BiosStage;
 pub use boot::BootStage;
 pub use bootloader::BootloaderStage;
 pub use cloud::CloudStage;
+pub use cmake::CmakeStage;
 pub use compilation::CompilationStage;
 pub use container::ContainerStage;
 pub use database::DatabaseStage;
@@ -69,6 +73,8 @@ pub fn selected_stages(stages: &[Stage]) -> Vec<Box<dyn InstallationStage>> {
             Stage::Packages => Box::new(PackagesStage),
             Stage::Kernel => Box::new(KernelStage::new()),
             Stage::Compilation => Box::new(CompilationStage::new()),
+            Stage::Autotools => Box::new(AutotoolsStage::new(config.autotools.clone())),
+            Stage::Cmake => Box::new(CmakeStage::new(config.cmake.clone())),
             Stage::Deno => Box::new(DenoStage::new()),
             Stage::Database => Box::new(DatabaseStage),
             Stage::Xorg => Box::new(XorgStage),
