@@ -1,0 +1,897 @@
+-- Using CMake version 4.4.3
+-- The C compiler identification is AppleClang 17.0.0.17000013
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMake platform flags: APPLE UNIX
+-- curl version=[8.10.1]
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_ADDR
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_ADDR - Success
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID - Success
+-- Found Perl: /usr/bin/perl (found version "5.34.1")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for connect in socket
+-- Looking for connect in socket - not found
+-- Looking for gethostname
+-- Looking for gethostname - found
+-- Found ZLIB: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libz.tbd (found version "1.2.12")
+-- Found NGHTTP2: /usr/local/include (found version "1.70.0")
+-- Looking for ldap_init in ldap
+-- Looking for ldap_init in ldap - found
+-- Looking for ber_init in ldap;lber
+-- Looking for ber_init in ldap;lber - found
+-- Looking for include file ldap.h
+-- Looking for include file ldap.h - found
+-- Looking for include files ldap.h, lber.h
+-- Looking for include files ldap.h, lber.h - found
+-- Performing Test NOT_NEED_LBER_H
+-- Performing Test NOT_NEED_LBER_H - Success
+-- Looking for ldap_url_parse
+-- Looking for ldap_url_parse - found
+-- Looking for ldap_init_fd
+-- Looking for ldap_init_fd - not found
+-- Looking for ldap_ssl.h
+-- Looking for ldap_ssl.h - not found
+-- Found Libidn2: /usr/local/include (found version "2.3.8")
+-- Found Libpsl: /usr/local/include (found version "0.23.3")
+-- Found Libssh2: /usr/local/include (found version "1.11.1")
+-- Performing Test USE_UNIX_SOCKETS
+-- Performing Test USE_UNIX_SOCKETS - Success
+-- Looking for 3 include files ldap.h, ..., sys/eventfd.h
+-- Looking for 3 include files ldap.h, ..., sys/eventfd.h - not found
+-- Looking for 3 include files ldap.h, ..., sys/filio.h
+-- Looking for 3 include files ldap.h, ..., sys/filio.h - found
+-- Looking for 4 include files ldap.h, ..., sys/wait.h
+-- Looking for 4 include files ldap.h, ..., sys/wait.h - found
+-- Looking for 5 include files ldap.h, ..., sys/ioctl.h
+-- Looking for 5 include files ldap.h, ..., sys/ioctl.h - found
+-- Looking for 6 include files ldap.h, ..., sys/param.h
+-- Looking for 6 include files ldap.h, ..., sys/param.h - found
+-- Looking for 7 include files ldap.h, ..., sys/poll.h
+-- Looking for 7 include files ldap.h, ..., sys/poll.h - found
+-- Looking for 8 include files ldap.h, ..., sys/resource.h
+-- Looking for 8 include files ldap.h, ..., sys/resource.h - found
+-- Looking for 9 include files ldap.h, ..., sys/select.h
+-- Looking for 9 include files ldap.h, ..., sys/select.h - found
+-- Looking for 10 include files ldap.h, ..., sys/socket.h
+-- Looking for 10 include files ldap.h, ..., sys/socket.h - found
+-- Looking for 11 include files ldap.h, ..., sys/sockio.h
+-- Looking for 11 include files ldap.h, ..., sys/sockio.h - found
+-- Looking for 12 include files ldap.h, ..., sys/stat.h
+-- Looking for 12 include files ldap.h, ..., sys/stat.h - found
+-- Looking for 13 include files ldap.h, ..., sys/time.h
+-- Looking for 13 include files ldap.h, ..., sys/time.h - found
+-- Looking for 14 include files ldap.h, ..., sys/types.h
+-- Looking for 14 include files ldap.h, ..., sys/types.h - found
+-- Looking for 15 include files ldap.h, ..., sys/un.h
+-- Looking for 15 include files ldap.h, ..., sys/un.h - found
+-- Looking for 16 include files ldap.h, ..., sys/utime.h
+-- Looking for 16 include files ldap.h, ..., sys/utime.h - not found
+-- Looking for 16 include files ldap.h, ..., sys/xattr.h
+-- Looking for 16 include files ldap.h, ..., sys/xattr.h - found
+-- Looking for 17 include files ldap.h, ..., arpa/inet.h
+-- Looking for 17 include files ldap.h, ..., arpa/inet.h - found
+-- Looking for 18 include files ldap.h, ..., dirent.h
+-- Looking for 18 include files ldap.h, ..., dirent.h - found
+-- Looking for 19 include files ldap.h, ..., fcntl.h
+-- Looking for 19 include files ldap.h, ..., fcntl.h - found
+-- Looking for 20 include files ldap.h, ..., ifaddrs.h
+-- Looking for 20 include files ldap.h, ..., ifaddrs.h - found
+-- Looking for 21 include files ldap.h, ..., io.h
+-- Looking for 21 include files ldap.h, ..., io.h - not found
+-- Looking for 21 include files ldap.h, ..., libgen.h
+-- Looking for 21 include files ldap.h, ..., libgen.h - found
+-- Looking for 22 include files ldap.h, ..., locale.h
+-- Looking for 22 include files ldap.h, ..., locale.h - found
+-- Looking for 23 include files ldap.h, ..., net/if.h
+-- Looking for 23 include files ldap.h, ..., net/if.h - found
+-- Looking for 24 include files ldap.h, ..., netdb.h
+-- Looking for 24 include files ldap.h, ..., netdb.h - found
+-- Looking for 25 include files ldap.h, ..., netinet/in.h
+-- Looking for 25 include files ldap.h, ..., netinet/in.h - found
+-- Looking for 26 include files ldap.h, ..., netinet/tcp.h
+-- Looking for 26 include files ldap.h, ..., netinet/tcp.h - found
+-- Looking for 27 include files ldap.h, ..., netinet/udp.h
+-- Looking for 27 include files ldap.h, ..., netinet/udp.h - found
+-- Looking for linux/tcp.h
+-- Looking for linux/tcp.h - not found
+-- Looking for 28 include files ldap.h, ..., poll.h
+-- Looking for 28 include files ldap.h, ..., poll.h - found
+-- Looking for 29 include files ldap.h, ..., pwd.h
+-- Looking for 29 include files ldap.h, ..., pwd.h - found
+-- Looking for 30 include files ldap.h, ..., stdatomic.h
+-- Looking for 30 include files ldap.h, ..., stdatomic.h - found
+-- Looking for 31 include files ldap.h, ..., stdbool.h
+-- Looking for 31 include files ldap.h, ..., stdbool.h - found
+-- Looking for 32 include files ldap.h, ..., strings.h
+-- Looking for 32 include files ldap.h, ..., strings.h - found
+-- Looking for 33 include files ldap.h, ..., stropts.h
+-- Looking for 33 include files ldap.h, ..., stropts.h - not found
+-- Looking for 33 include files ldap.h, ..., termio.h
+-- Looking for 33 include files ldap.h, ..., termio.h - not found
+-- Looking for 33 include files ldap.h, ..., termios.h
+-- Looking for 33 include files ldap.h, ..., termios.h - found
+-- Looking for 34 include files ldap.h, ..., unistd.h
+-- Looking for 34 include files ldap.h, ..., unistd.h - found
+-- Looking for 35 include files ldap.h, ..., utime.h
+-- Looking for 35 include files ldap.h, ..., utime.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of ssize_t
+-- Check size of ssize_t - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of __int64
+-- Check size of __int64 - failed
+-- Check size of time_t
+-- Check size of time_t - done
+-- Check size of suseconds_t
+-- Check size of suseconds_t - done
+-- Looking for fnmatch
+-- Looking for fnmatch - found
+-- Looking for basename
+-- Looking for basename - found
+-- Looking for opendir
+-- Looking for opendir - found
+-- Looking for socket
+-- Looking for socket - found
+-- Looking for sched_yield
+-- Looking for sched_yield - found
+-- Looking for socketpair
+-- Looking for socketpair - found
+-- Looking for recv
+-- Looking for recv - found
+-- Looking for send
+-- Looking for send - found
+-- Looking for sendmsg
+-- Looking for sendmsg - found
+-- Looking for select
+-- Looking for select - found
+-- Looking for strdup
+-- Looking for strdup - found
+-- Looking for strtok_r
+-- Looking for strtok_r - found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for stricmp
+-- Looking for stricmp - not found
+-- Looking for strcmpi
+-- Looking for strcmpi - not found
+-- Looking for memrchr
+-- Looking for memrchr - not found
+-- Looking for alarm
+-- Looking for alarm - found
+-- Looking for arc4random
+-- Looking for arc4random - found
+-- Looking for fcntl
+-- Looking for fcntl - found
+-- Looking for getppid
+-- Looking for getppid - found
+-- Looking for utimes
+-- Looking for utimes - found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for closesocket
+-- Looking for closesocket - not found
+-- Looking for sigsetjmp
+-- Looking for sigsetjmp - found
+-- Looking for getpass_r
+-- Looking for getpass_r - not found
+-- Looking for getpwuid
+-- Looking for getpwuid - found
+-- Looking for getpwuid_r
+-- Looking for getpwuid_r - found
+-- Looking for geteuid
+-- Looking for geteuid - found
+-- Looking for utime
+-- Looking for utime - found
+-- Looking for gmtime_r
+-- Looking for gmtime_r - found
+-- Looking for gethostbyname_r
+-- Looking for gethostbyname_r - not found
+-- Looking for signal
+-- Looking for signal - found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strerror_r
+-- Looking for strerror_r - found
+-- Looking for sigaction
+-- Looking for sigaction - found
+-- Looking for siginterrupt
+-- Looking for siginterrupt - found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for getifaddrs
+-- Looking for getifaddrs - found
+-- Looking for freeaddrinfo
+-- Looking for freeaddrinfo - found
+-- Looking for pipe
+-- Looking for pipe - found
+-- Looking for eventfd
+-- Looking for eventfd - not found
+-- Looking for ftruncate
+-- Looking for ftruncate - found
+-- Looking for _fseeki64
+-- Looking for _fseeki64 - not found
+-- Looking for getpeername
+-- Looking for getpeername - found
+-- Looking for getsockname
+-- Looking for getsockname - found
+-- Looking for if_nametoindex
+-- Looking for if_nametoindex - found
+-- Looking for getrlimit
+-- Looking for getrlimit - found
+-- Looking for setlocale
+-- Looking for setlocale - found
+-- Looking for setmode
+-- Looking for setmode - found
+-- Looking for setrlimit
+-- Looking for setrlimit - found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for mach_absolute_time
+-- Looking for mach_absolute_time - found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Looking for inet_pton
+-- Looking for inet_pton - found
+-- Looking for fsetxattr
+-- Looking for fsetxattr - found
+-- Performing Test HAVE_FSETXATTR_5
+-- Performing Test HAVE_FSETXATTR_5 - Failed
+-- Performing Test HAVE_FSETXATTR_6
+-- Performing Test HAVE_FSETXATTR_6 - Success
+-- Check size of sa_family_t
+-- Check size of sa_family_t - done
+-- Performing Test HAVE_FCNTL_O_NONBLOCK
+-- Performing Test HAVE_FCNTL_O_NONBLOCK - Success
+-- Performing Test HAVE_IOCTLSOCKET
+-- Performing Test HAVE_IOCTLSOCKET - Failed
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL - Failed
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO - Failed
+-- Performing Test HAVE_IOCTLSOCKET_FIONBIO
+-- Performing Test HAVE_IOCTLSOCKET_FIONBIO - Failed
+-- Performing Test HAVE_IOCTL_FIONBIO
+-- Performing Test HAVE_IOCTL_FIONBIO - Success
+-- Performing Test HAVE_IOCTL_SIOCGIFADDR
+-- Performing Test HAVE_IOCTL_SIOCGIFADDR - Success
+-- Performing Test HAVE_SETSOCKOPT_SO_NONBLOCK
+-- Performing Test HAVE_SETSOCKOPT_SO_NONBLOCK - Failed
+-- Performing Test HAVE_O_NONBLOCK
+-- Performing Test HAVE_O_NONBLOCK - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_3
+-- Performing Test HAVE_GETHOSTBYNAME_R_3 - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_5
+-- Performing Test HAVE_GETHOSTBYNAME_R_5 - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_6
+-- Performing Test HAVE_GETHOSTBYNAME_R_6 - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_3_REENTRANT
+-- Performing Test HAVE_GETHOSTBYNAME_R_3_REENTRANT - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_5_REENTRANT
+-- Performing Test HAVE_GETHOSTBYNAME_R_5_REENTRANT - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_6_REENTRANT
+-- Performing Test HAVE_GETHOSTBYNAME_R_6_REENTRANT - Failed
+-- Performing Test HAVE_IN_ADDR_T
+-- Performing Test HAVE_IN_ADDR_T - Success
+-- Performing Test HAVE_BOOL_T
+-- Performing Test HAVE_BOOL_T - Success
+-- Performing Test STDC_HEADERS
+-- Performing Test STDC_HEADERS - Success
+-- Performing Test HAVE_FILE_OFFSET_BITS
+-- Performing Test HAVE_FILE_OFFSET_BITS - Success
+-- Performing Test HAVE_ATOMIC
+-- Performing Test HAVE_ATOMIC - Success
+-- Check size of off_t
+-- Check size of off_t - done
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Check size of curl_off_t
+-- Check size of curl_off_t - done
+-- Check size of curl_socket_t
+-- Check size of curl_socket_t - done
+-- Performing Test HAVE_WRITABLE_ARGV
+-- Performing Test HAVE_WRITABLE_ARGV - Success
+-- Performing Test HAVE_GLIBC_STRERROR_R
+-- Performing Test HAVE_GLIBC_STRERROR_R - Failed
+-- Performing Test HAVE_POSIX_STRERROR_R
+-- Performing Test HAVE_POSIX_STRERROR_R - Success
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC - Success
+-- Performing Test HAVE_BUILTIN_AVAILABLE
+-- Performing Test HAVE_BUILTIN_AVAILABLE - Success
+-- Check size of struct sockaddr_storage
+-- Check size of struct sockaddr_storage - done
+-- Performing Test HAVE_MSG_NOSIGNAL
+-- Performing Test HAVE_MSG_NOSIGNAL - Success
+-- Performing Test HAVE_STRUCT_TIMEVAL
+-- Performing Test HAVE_STRUCT_TIMEVAL - Success
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC_RAW
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC_RAW - Success
+-- Protocols: dict file ftp gopher http imap ipfs ipns ldap ldaps mqtt pop3 rtsp scp sftp smtp telnet tftp
+-- Features: alt-svc AsynchDNS HTTP2 IDN IPv6 Largefile libz PSL threadsafe UnixSockets
+-- Enabled SSL backends: 
+-- Configuring done (16.1s)
+-- Generating done (0.9s)
+-- Build files have been written to: /usr/src/curl-build
+
+[  0%] Generating curl-config.1
+[  0%] Built target curl-generate-curl-config.1
+[  0%] Generating mk-ca-bundle.1
+[  0%] Built target curl-generate-mk-ca-bundle.1
+[  0%] Built target curl-opts-man
+[  0%] Generating libcurl-symbols.md
+[  0%] Built target curl-man
+[  0%] Generating curl.1
+[  0%] Built target generate-curl.1
+[  0%] Building C object lib/CMakeFiles/libcurl_shared.dir/altsvc.c.o
+[  0%] Building C object lib/CMakeFiles/libcurl_shared.dir/amigaos.c.o
+[  0%] Building C object lib/CMakeFiles/libcurl_shared.dir/asyn-ares.c.o
+[  0%] Building C object lib/CMakeFiles/libcurl_shared.dir/asyn-thread.c.o
+[  0%] Building C object lib/CMakeFiles/libcurl_shared.dir/base64.c.o
+[  0%] Building C object lib/CMakeFiles/libcurl_shared.dir/bufq.c.o
+[  0%] Building C object lib/CMakeFiles/libcurl_shared.dir/bufref.c.o
+[  0%] Building C object lib/CMakeFiles/libcurl_shared.dir/c-hyper.c.o
+[  0%] Building C object lib/CMakeFiles/libcurl_shared.dir/cf-h1-proxy.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/cf-h2-proxy.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/cf-haproxy.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/cf-https-connect.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/cf-socket.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/cfilters.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/conncache.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/connect.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/content_encoding.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/cookie.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_addrinfo.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_des.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_endian.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_fnmatch.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_get_line.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_gethostname.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_gssapi.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_memrchr.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_multibyte.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_ntlm_core.c.o
+[  9%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_path.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_range.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_rtmp.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_sasl.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_sha512_256.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_sspi.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_threads.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/curl_trc.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/cw-out.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/dict.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/doh.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/dynbuf.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/dynhds.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/easy.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/easygetopt.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/easyoptions.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/escape.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/file.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/fileinfo.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/fopen.c.o
+[ 18%] Building C object lib/CMakeFiles/libcurl_shared.dir/formdata.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/ftp.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/ftplistparser.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/getenv.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/getinfo.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/gopher.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/hash.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/headers.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/hmac.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/hostasyn.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/hostip.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/hostip4.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/hostip6.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/hostsyn.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/hsts.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/http.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/http1.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/http2.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/http_aws_sigv4.c.o
+[ 27%] Building C object lib/CMakeFiles/libcurl_shared.dir/http_chunks.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/http_digest.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/http_negotiate.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/http_ntlm.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/http_proxy.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/idn.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/if2ip.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/imap.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/inet_ntop.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/inet_pton.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/krb5.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/ldap.c.o
+/usr/src/curl-8.10.1/lib/ldap.c:338:8: warning: 'ldap_url_parse' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  338 |   rc = ldap_url_parse(data->state.url, &ludp);
+      |        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2065:1: note: 'ldap_url_parse' has been explicitly marked deprecated here
+ 2065 | ldap_url_parse LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:343:37: warning: 'ldap_err2string' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  343 |     failf(data, "Bad LDAP URL: %s", ldap_err2string((curl_ldap_num_t)rc));
+      |                                     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1384:1: note: 'ldap_err2string' has been explicitly marked deprecated here
+ 1384 | ldap_err2string LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:371:3: warning: 'ldap_set_option' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  371 |   ldap_set_option(NULL, LDAP_OPT_NETWORK_TIMEOUT, &ldap_timeout);
+      |   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:984:1: note: 'ldap_set_option' has been explicitly marked deprecated here
+  984 | ldap_set_option LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:373:3: warning: 'ldap_set_option' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  373 |   ldap_set_option(NULL, LDAP_OPT_PROTOCOL_VERSION, &ldap_proto);
+      |   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:984:1: note: 'ldap_set_option' has been explicitly marked deprecated here
+  984 | ldap_set_option LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:447:12: warning: 'ldap_set_option' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  447 |       rc = ldap_set_option(NULL, LDAP_OPT_X_TLS_CACERTFILE, ldap_ca);
+      |            ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:984:1: note: 'ldap_set_option' has been explicitly marked deprecated here
+  984 | ldap_set_option LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:450:17: warning: 'ldap_err2string' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  450 |                 ldap_err2string(rc));
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1384:1: note: 'ldap_err2string' has been explicitly marked deprecated here
+ 1384 | ldap_err2string LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:459:10: warning: 'ldap_set_option' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  459 |     rc = ldap_set_option(NULL, LDAP_OPT_X_TLS_REQUIRE_CERT, &ldap_option);
+      |          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:984:1: note: 'ldap_set_option' has been explicitly marked deprecated here
+  984 | ldap_set_option LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:462:15: warning: 'ldap_err2string' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  462 |               ldap_err2string(rc));
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1384:1: note: 'ldap_err2string' has been explicitly marked deprecated here
+ 1384 | ldap_err2string LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:466:14: warning: 'ldap_init' is deprecated: first deprecated in macOS 10.10 - use ldap_initialize [-Wdeprecated-declarations]
+  466 |     server = ldap_init(host, conn->primary.remote_port);
+      |              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1526:1: note: 'ldap_init' has been explicitly marked deprecated here
+ 1526 | ldap_init LDAP_P(( /* deprecated, use ldap_create or ldap_initialize */
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:474:10: warning: 'ldap_set_option' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  474 |     rc = ldap_set_option(server, LDAP_OPT_X_TLS, &ldap_option);
+      |          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:984:1: note: 'ldap_set_option' has been explicitly marked deprecated here
+  984 | ldap_set_option LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:477:15: warning: 'ldap_err2string' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  477 |               ldap_err2string(rc));
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1384:1: note: 'ldap_err2string' has been explicitly marked deprecated here
+ 1384 | ldap_err2string LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:509:14: warning: 'ldap_init' is deprecated: first deprecated in macOS 10.10 - use ldap_initialize [-Wdeprecated-declarations]
+  509 |     server = ldap_init(host, (curl_ldap_num_t)conn->primary.remote_port);
+      |              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1526:1: note: 'ldap_init' has been explicitly marked deprecated here
+ 1526 | ldap_init LDAP_P(( /* deprecated, use ldap_create or ldap_initialize */
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:521:8: warning: 'ldap_simple_bind_s' is deprecated: first deprecated in macOS 10.10 - use ldap_sasl_bind_s [-Wdeprecated-declarations]
+  521 |   rc = ldap_simple_bind_s(server, user, passwd);
+      |        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1291:1: note: 'ldap_simple_bind_s' has been explicitly marked deprecated here
+ 1291 | ldap_simple_bind_s LDAP_P(( /* deprecated, use ldap_sasl_bind_s */
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:525:5: warning: 'ldap_set_option' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  525 |     ldap_set_option(server, LDAP_OPT_PROTOCOL_VERSION, &ldap_proto);
+      |     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:984:1: note: 'ldap_set_option' has been explicitly marked deprecated here
+  984 | ldap_set_option LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:529:10: warning: 'ldap_simple_bind_s' is deprecated: first deprecated in macOS 10.10 - use ldap_sasl_bind_s [-Wdeprecated-declarations]
+  529 |     rc = ldap_simple_bind_s(server, user, passwd);
+      |          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1291:1: note: 'ldap_simple_bind_s' has been explicitly marked deprecated here
+ 1291 | ldap_simple_bind_s LDAP_P(( /* deprecated, use ldap_sasl_bind_s */
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:538:11: warning: 'ldap_err2string' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  538 |           ldap_err2string(rc));
+      |           ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1384:1: note: 'ldap_err2string' has been explicitly marked deprecated here
+ 1384 | ldap_err2string LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:545:13: warning: 'ldap_search_s' is deprecated: first deprecated in macOS 10.10 - use ldap_search_ext_s [-Wdeprecated-declarations]
+  545 |   rc = (int)ldap_search_s(server, ludp->lud_dn,
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1925:1: note: 'ldap_search_s' has been explicitly marked deprecated here
+ 1925 | ldap_search_s LDAP_P((  /* deprecated, use ldap_search_ext_s */
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:550:36: warning: 'ldap_err2string' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  550 |     failf(data, "LDAP remote: %s", ldap_err2string((curl_ldap_num_t)rc));
+      |                                    ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1384:1: note: 'ldap_err2string' has been explicitly marked deprecated here
+ 1384 | ldap_err2string LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:556:23: warning: 'ldap_first_entry' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  556 |   for(entryIterator = ldap_first_entry(server, ldapmsg);
+      |                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1623:1: note: 'ldap_first_entry' has been explicitly marked deprecated here
+ 1623 | ldap_first_entry LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:558:23: warning: 'ldap_next_entry' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  558 |       entryIterator = ldap_next_entry(server, entryIterator), num++) {
+      |                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1628:1: note: 'ldap_next_entry' has been explicitly marked deprecated here
+ 1628 | ldap_next_entry LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:582:25: warning: 'ldap_get_dn' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  582 |       char *dn = name = ldap_get_dn(server, entryIterator);
+      |                         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1662:1: note: 'ldap_get_dn' has been explicitly marked deprecated here
+ 1662 | ldap_get_dn LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:589:9: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  589 |         ldap_memfree(dn);
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:596:9: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  596 |         ldap_memfree(dn);
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:603:9: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  603 |         ldap_memfree(dn);
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:609:7: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  609 |       ldap_memfree(dn);
+      |       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:613:21: warning: 'ldap_first_attribute' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  613 |     for(attribute = ldap_first_attribute(server, entryIterator, &ber);
+      |                     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1804:1: note: 'ldap_first_attribute' has been explicitly marked deprecated here
+ 1804 | ldap_first_attribute LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:615:21: warning: 'ldap_next_attribute' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  615 |         attribute = ldap_next_attribute(server, entryIterator, ber)) {
+      |                     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1810:1: note: 'ldap_next_attribute' has been explicitly marked deprecated here
+ 1810 | ldap_next_attribute LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:633:14: warning: 'ldap_get_values_len' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  633 |       vals = ldap_get_values_len(server, entryIterator, attribute);
+      |              ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1820:1: note: 'ldap_get_values_len' has been explicitly marked deprecated here
+ 1820 | ldap_get_values_len LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:638:13: warning: 'ldap_value_free_len' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  638 |             ldap_value_free_len(vals);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1830:1: note: 'ldap_value_free_len' has been explicitly marked deprecated here
+ 1830 | ldap_value_free_len LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:640:13: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  640 |             ldap_memfree(attribute);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:642:15: warning: 'ber_free' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  642 |               ber_free(ber, 0);
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/lber.h:454:1: note: 'ber_free' has been explicitly marked deprecated here
+  454 | ber_free LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:649:13: warning: 'ldap_value_free_len' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  649 |             ldap_value_free_len(vals);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1830:1: note: 'ldap_value_free_len' has been explicitly marked deprecated here
+ 1830 | ldap_value_free_len LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:651:13: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  651 |             ldap_memfree(attribute);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:653:15: warning: 'ber_free' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  653 |               ber_free(ber, 0);
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/lber.h:454:1: note: 'ber_free' has been explicitly marked deprecated here
+  454 | ber_free LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:660:13: warning: 'ldap_value_free_len' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  660 |             ldap_value_free_len(vals);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1830:1: note: 'ldap_value_free_len' has been explicitly marked deprecated here
+ 1830 | ldap_value_free_len LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:662:13: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  662 |             ldap_memfree(attribute);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:664:15: warning: 'ber_free' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  664 |               ber_free(ber, 0);
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/lber.h:454:1: note: 'ber_free' has been explicitly marked deprecated here
+  454 | ber_free LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:675:15: warning: 'ldap_value_free_len' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  675 |               ldap_value_free_len(vals);
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1830:1: note: 'ldap_value_free_len' has been explicitly marked deprecated here
+ 1830 | ldap_value_free_len LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:677:15: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  677 |               ldap_memfree(attribute);
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:679:17: warning: 'ber_free' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  679 |                 ber_free(ber, 0);
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/lber.h:454:1: note: 'ber_free' has been explicitly marked deprecated here
+  454 | ber_free LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:689:17: warning: 'ldap_value_free_len' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  689 |                 ldap_value_free_len(vals);
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1830:1: note: 'ldap_value_free_len' has been explicitly marked deprecated here
+ 1830 | ldap_value_free_len LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:691:17: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  691 |                 ldap_memfree(attribute);
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:693:19: warning: 'ber_free' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  693 |                   ber_free(ber, 0);
+      |                   ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/lber.h:454:1: note: 'ber_free' has been explicitly marked deprecated here
+  454 | ber_free LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:703:15: warning: 'ldap_value_free_len' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  703 |               ldap_value_free_len(vals);
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1830:1: note: 'ldap_value_free_len' has been explicitly marked deprecated here
+ 1830 | ldap_value_free_len LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:705:15: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  705 |               ldap_memfree(attribute);
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:707:17: warning: 'ber_free' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  707 |                 ber_free(ber, 0);
+      |                 ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/lber.h:454:1: note: 'ber_free' has been explicitly marked deprecated here
+  454 | ber_free LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:715:13: warning: 'ldap_value_free_len' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  715 |             ldap_value_free_len(vals);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1830:1: note: 'ldap_value_free_len' has been explicitly marked deprecated here
+ 1830 | ldap_value_free_len LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:717:13: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  717 |             ldap_memfree(attribute);
+      |             ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:719:15: warning: 'ber_free' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  719 |               ber_free(ber, 0);
+      |               ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/lber.h:454:1: note: 'ber_free' has been explicitly marked deprecated here
+  454 | ber_free LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:726:9: warning: 'ldap_value_free_len' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  726 |         ldap_value_free_len(vals);
+      |         ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1830:1: note: 'ldap_value_free_len' has been explicitly marked deprecated here
+ 1830 | ldap_value_free_len LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:731:7: warning: 'ldap_memfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  731 |       ldap_memfree(attribute);
+      |       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2002:1: note: 'ldap_memfree' has been explicitly marked deprecated here
+ 2002 | ldap_memfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:739:7: warning: 'ber_free' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  739 |       ber_free(ber, 0);
+      |       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/lber.h:454:1: note: 'ber_free' has been explicitly marked deprecated here
+  454 | ber_free LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:744:5: warning: 'ldap_msgfree' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  744 |     ldap_msgfree(ldapmsg);
+      |     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1869:1: note: 'ldap_msgfree' has been explicitly marked deprecated here
+ 1869 | ldap_msgfree LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:750:5: warning: 'ldap_free_urldesc' is deprecated: first deprecated in macOS 10.11 - use OpenDirectory Framework [-Wdeprecated-declarations]
+  750 |     ldap_free_urldesc(ludp);
+      |     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:2074:1: note: 'ldap_free_urldesc' has been explicitly marked deprecated here
+ 2074 | ldap_free_urldesc LDAP_P((
+      | ^
+/usr/src/curl-8.10.1/lib/ldap.c:752:5: warning: 'ldap_unbind_s' is deprecated: first deprecated in macOS 10.10 - use ldap_unbind_ext_s [-Wdeprecated-declarations]
+  752 |     ldap_unbind_s(server);
+      |     ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ldap.h:1971:1: note: 'ldap_unbind_s' has been explicitly marked deprecated here
+ 1971 | ldap_unbind_s LDAP_P(( /* deprecated, use ldap_unbind_ext_s */
+      | ^
+55 warnings generated.
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/llist.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/macos.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/md4.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/md5.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/memdebug.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/mime.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/mprintf.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/mqtt.c.o
+[ 36%] Building C object lib/CMakeFiles/libcurl_shared.dir/multi.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/netrc.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/nonblock.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/noproxy.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/openldap.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/parsedate.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/pingpong.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/pop3.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/progress.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/psl.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/rand.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/rename.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/request.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/rtsp.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/select.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/sendf.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/setopt.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/sha256.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/share.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/slist.c.o
+[ 45%] Building C object lib/CMakeFiles/libcurl_shared.dir/smb.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/smtp.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/socketpair.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/socks.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/socks_gssapi.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/socks_sspi.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/speedcheck.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/splay.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/strcase.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/strdup.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/strerror.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/strtok.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/strtoofft.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/system_win32.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/telnet.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/tftp.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/timediff.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/timeval.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/transfer.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/url.c.o
+[ 54%] Building C object lib/CMakeFiles/libcurl_shared.dir/urlapi.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/version.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/version_win32.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/warnless.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/ws.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/cleartext.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/cram.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/digest.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/digest_sspi.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/gsasl.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/krb5_gssapi.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/krb5_sspi.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/ntlm.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/ntlm_sspi.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/oauth2.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/spnego_gssapi.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/spnego_sspi.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vauth/vauth.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/bearssl.c.o
+[ 63%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/cipher_suite.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/gtls.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/hostcheck.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/keylog.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/mbedtls.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/mbedtls_threadlock.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/openssl.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/rustls.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/schannel.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/schannel_verify.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/sectransp.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/vtls.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/wolfssl.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vtls/x509asn1.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vquic/curl_msh3.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vquic/curl_ngtcp2.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vquic/curl_osslq.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vquic/curl_quiche.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vquic/vquic.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vquic/vquic-tls.c.o
+[ 72%] Building C object lib/CMakeFiles/libcurl_shared.dir/vssh/libssh.c.o
+[ 81%] Building C object lib/CMakeFiles/libcurl_shared.dir/vssh/libssh2.c.o
+[ 81%] Building C object lib/CMakeFiles/libcurl_shared.dir/vssh/wolfssh.c.o
+[ 81%] Linking C shared library libcurl.dylib
+[ 81%] Built target libcurl_shared
+[ 81%] Generating tool_hugehelp.c
+[ 81%] Building C object src/CMakeFiles/curl.dir/slist_wc.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/terminal.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_binmode.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_bname.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_cb_dbg.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_cb_hdr.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_cb_prg.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_cb_rea.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_cb_see.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_cb_soc.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_cb_wrt.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_cfgable.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_dirhie.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_doswin.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_easysrc.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_filetime.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_findfile.c.o
+[ 81%] Building C object src/CMakeFiles/curl.dir/tool_formparse.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_getparam.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_getpass.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_help.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_helpers.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_hugehelp.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_ipfs.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_libinfo.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_listhelp.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_main.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_msgs.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_operate.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_operhlp.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_paramhlp.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_parsecfg.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_progress.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_setopt.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_sleep.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_stderr.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_strdup.c.o
+[ 90%] Building C object src/CMakeFiles/curl.dir/tool_urlglob.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/tool_util.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/tool_vms.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/tool_writeout.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/tool_writeout_json.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/tool_xattr.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/var.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/__/lib/base64.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/__/lib/curl_multibyte.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/__/lib/dynbuf.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/__/lib/nonblock.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/__/lib/strtoofft.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/__/lib/timediff.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/__/lib/version_win32.c.o
+[100%] Building C object src/CMakeFiles/curl.dir/__/lib/warnless.c.o
+[100%] Linking C executable curl
+[100%] Built target curl

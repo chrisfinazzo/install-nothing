@@ -1,0 +1,354 @@
+-- Using CMake version 4.4.3
+-- The C compiler identification is AppleClang 17.0.0.17000013
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- CMake platform flags: APPLE UNIX
+-- curl version=[8.10.1]
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_ADDR
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_ADDR - Success
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID
+-- Performing Test HAVE_SOCKADDR_IN6_SIN6_SCOPE_ID - Success
+-- Found Perl: /usr/bin/perl (found version "5.34.1")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for connect in socket
+-- Looking for connect in socket - not found
+-- Looking for gethostname
+-- Looking for gethostname - found
+-- Found ZLIB: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libz.tbd (found version "1.2.12")
+-- Found NGHTTP2: /usr/local/include (found version "1.70.0")
+-- Looking for ldap_init in ldap
+-- Looking for ldap_init in ldap - found
+-- Looking for ber_init in ldap;lber
+-- Looking for ber_init in ldap;lber - found
+-- Looking for include file ldap.h
+-- Looking for include file ldap.h - found
+-- Looking for include files ldap.h, lber.h
+-- Looking for include files ldap.h, lber.h - found
+-- Performing Test NOT_NEED_LBER_H
+-- Performing Test NOT_NEED_LBER_H - Success
+-- Looking for ldap_url_parse
+-- Looking for ldap_url_parse - found
+-- Looking for ldap_init_fd
+-- Looking for ldap_init_fd - not found
+-- Looking for ldap_ssl.h
+-- Looking for ldap_ssl.h - not found
+-- Found Libidn2: /usr/local/include (found version "2.3.8")
+-- Found Libpsl: /usr/local/include (found version "0.23.3")
+-- Found Libssh2: /usr/local/include (found version "1.11.1")
+-- Performing Test USE_UNIX_SOCKETS
+-- Performing Test USE_UNIX_SOCKETS - Success
+-- Looking for 3 include files ldap.h, ..., sys/eventfd.h
+-- Looking for 3 include files ldap.h, ..., sys/eventfd.h - not found
+-- Looking for 3 include files ldap.h, ..., sys/filio.h
+-- Looking for 3 include files ldap.h, ..., sys/filio.h - found
+-- Looking for 4 include files ldap.h, ..., sys/wait.h
+-- Looking for 4 include files ldap.h, ..., sys/wait.h - found
+-- Looking for 5 include files ldap.h, ..., sys/ioctl.h
+-- Looking for 5 include files ldap.h, ..., sys/ioctl.h - found
+-- Looking for 6 include files ldap.h, ..., sys/param.h
+-- Looking for 6 include files ldap.h, ..., sys/param.h - found
+-- Looking for 7 include files ldap.h, ..., sys/poll.h
+-- Looking for 7 include files ldap.h, ..., sys/poll.h - found
+-- Looking for 8 include files ldap.h, ..., sys/resource.h
+-- Looking for 8 include files ldap.h, ..., sys/resource.h - found
+-- Looking for 9 include files ldap.h, ..., sys/select.h
+-- Looking for 9 include files ldap.h, ..., sys/select.h - found
+-- Looking for 10 include files ldap.h, ..., sys/socket.h
+-- Looking for 10 include files ldap.h, ..., sys/socket.h - found
+-- Looking for 11 include files ldap.h, ..., sys/sockio.h
+-- Looking for 11 include files ldap.h, ..., sys/sockio.h - found
+-- Looking for 12 include files ldap.h, ..., sys/stat.h
+-- Looking for 12 include files ldap.h, ..., sys/stat.h - found
+-- Looking for 13 include files ldap.h, ..., sys/time.h
+-- Looking for 13 include files ldap.h, ..., sys/time.h - found
+-- Looking for 14 include files ldap.h, ..., sys/types.h
+-- Looking for 14 include files ldap.h, ..., sys/types.h - found
+-- Looking for 15 include files ldap.h, ..., sys/un.h
+-- Looking for 15 include files ldap.h, ..., sys/un.h - found
+-- Looking for 16 include files ldap.h, ..., sys/utime.h
+-- Looking for 16 include files ldap.h, ..., sys/utime.h - not found
+-- Looking for 16 include files ldap.h, ..., sys/xattr.h
+-- Looking for 16 include files ldap.h, ..., sys/xattr.h - found
+-- Looking for 17 include files ldap.h, ..., arpa/inet.h
+-- Looking for 17 include files ldap.h, ..., arpa/inet.h - found
+-- Looking for 18 include files ldap.h, ..., dirent.h
+-- Looking for 18 include files ldap.h, ..., dirent.h - found
+-- Looking for 19 include files ldap.h, ..., fcntl.h
+-- Looking for 19 include files ldap.h, ..., fcntl.h - found
+-- Looking for 20 include files ldap.h, ..., ifaddrs.h
+-- Looking for 20 include files ldap.h, ..., ifaddrs.h - found
+-- Looking for 21 include files ldap.h, ..., io.h
+-- Looking for 21 include files ldap.h, ..., io.h - not found
+-- Looking for 21 include files ldap.h, ..., libgen.h
+-- Looking for 21 include files ldap.h, ..., libgen.h - found
+-- Looking for 22 include files ldap.h, ..., locale.h
+-- Looking for 22 include files ldap.h, ..., locale.h - found
+-- Looking for 23 include files ldap.h, ..., net/if.h
+-- Looking for 23 include files ldap.h, ..., net/if.h - found
+-- Looking for 24 include files ldap.h, ..., netdb.h
+-- Looking for 24 include files ldap.h, ..., netdb.h - found
+-- Looking for 25 include files ldap.h, ..., netinet/in.h
+-- Looking for 25 include files ldap.h, ..., netinet/in.h - found
+-- Looking for 26 include files ldap.h, ..., netinet/tcp.h
+-- Looking for 26 include files ldap.h, ..., netinet/tcp.h - found
+-- Looking for 27 include files ldap.h, ..., netinet/udp.h
+-- Looking for 27 include files ldap.h, ..., netinet/udp.h - found
+-- Looking for linux/tcp.h
+-- Looking for linux/tcp.h - not found
+-- Looking for 28 include files ldap.h, ..., poll.h
+-- Looking for 28 include files ldap.h, ..., poll.h - found
+-- Looking for 29 include files ldap.h, ..., pwd.h
+-- Looking for 29 include files ldap.h, ..., pwd.h - found
+-- Looking for 30 include files ldap.h, ..., stdatomic.h
+-- Looking for 30 include files ldap.h, ..., stdatomic.h - found
+-- Looking for 31 include files ldap.h, ..., stdbool.h
+-- Looking for 31 include files ldap.h, ..., stdbool.h - found
+-- Looking for 32 include files ldap.h, ..., strings.h
+-- Looking for 32 include files ldap.h, ..., strings.h - found
+-- Looking for 33 include files ldap.h, ..., stropts.h
+-- Looking for 33 include files ldap.h, ..., stropts.h - not found
+-- Looking for 33 include files ldap.h, ..., termio.h
+-- Looking for 33 include files ldap.h, ..., termio.h - not found
+-- Looking for 33 include files ldap.h, ..., termios.h
+-- Looking for 33 include files ldap.h, ..., termios.h - found
+-- Looking for 34 include files ldap.h, ..., unistd.h
+-- Looking for 34 include files ldap.h, ..., unistd.h - found
+-- Looking for 35 include files ldap.h, ..., utime.h
+-- Looking for 35 include files ldap.h, ..., utime.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of ssize_t
+-- Check size of ssize_t - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of __int64
+-- Check size of __int64 - failed
+-- Check size of time_t
+-- Check size of time_t - done
+-- Check size of suseconds_t
+-- Check size of suseconds_t - done
+-- Looking for fnmatch
+-- Looking for fnmatch - found
+-- Looking for basename
+-- Looking for basename - found
+-- Looking for opendir
+-- Looking for opendir - found
+-- Looking for socket
+-- Looking for socket - found
+-- Looking for sched_yield
+-- Looking for sched_yield - found
+-- Looking for socketpair
+-- Looking for socketpair - found
+-- Looking for recv
+-- Looking for recv - found
+-- Looking for send
+-- Looking for send - found
+-- Looking for sendmsg
+-- Looking for sendmsg - found
+-- Looking for select
+-- Looking for select - found
+-- Looking for strdup
+-- Looking for strdup - found
+-- Looking for strtok_r
+-- Looking for strtok_r - found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - found
+-- Looking for stricmp
+-- Looking for stricmp - not found
+-- Looking for strcmpi
+-- Looking for strcmpi - not found
+-- Looking for memrchr
+-- Looking for memrchr - not found
+-- Looking for alarm
+-- Looking for alarm - found
+-- Looking for arc4random
+-- Looking for arc4random - found
+-- Looking for fcntl
+-- Looking for fcntl - found
+-- Looking for getppid
+-- Looking for getppid - found
+-- Looking for utimes
+-- Looking for utimes - found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for closesocket
+-- Looking for closesocket - not found
+-- Looking for sigsetjmp
+-- Looking for sigsetjmp - found
+-- Looking for getpass_r
+-- Looking for getpass_r - not found
+-- Looking for getpwuid
+-- Looking for getpwuid - found
+-- Looking for getpwuid_r
+-- Looking for getpwuid_r - found
+-- Looking for geteuid
+-- Looking for geteuid - found
+-- Looking for utime
+-- Looking for utime - found
+-- Looking for gmtime_r
+-- Looking for gmtime_r - found
+-- Looking for gethostbyname_r
+-- Looking for gethostbyname_r - not found
+-- Looking for signal
+-- Looking for signal - found
+-- Looking for strtoll
+-- Looking for strtoll - found
+-- Looking for strerror_r
+-- Looking for strerror_r - found
+-- Looking for sigaction
+-- Looking for sigaction - found
+-- Looking for siginterrupt
+-- Looking for siginterrupt - found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for getifaddrs
+-- Looking for getifaddrs - found
+-- Looking for freeaddrinfo
+-- Looking for freeaddrinfo - found
+-- Looking for pipe
+-- Looking for pipe - found
+-- Looking for eventfd
+-- Looking for eventfd - not found
+-- Looking for ftruncate
+-- Looking for ftruncate - found
+-- Looking for _fseeki64
+-- Looking for _fseeki64 - not found
+-- Looking for getpeername
+-- Looking for getpeername - found
+-- Looking for getsockname
+-- Looking for getsockname - found
+-- Looking for if_nametoindex
+-- Looking for if_nametoindex - found
+-- Looking for getrlimit
+-- Looking for getrlimit - found
+-- Looking for setlocale
+-- Looking for setlocale - found
+-- Looking for setmode
+-- Looking for setmode - found
+-- Looking for setrlimit
+-- Looking for setrlimit - found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for mach_absolute_time
+-- Looking for mach_absolute_time - found
+-- Looking for inet_ntop
+-- Looking for inet_ntop - found
+-- Looking for inet_pton
+-- Looking for inet_pton - found
+-- Looking for fsetxattr
+-- Looking for fsetxattr - found
+-- Performing Test HAVE_FSETXATTR_5
+-- Performing Test HAVE_FSETXATTR_5 - Failed
+-- Performing Test HAVE_FSETXATTR_6
+-- Performing Test HAVE_FSETXATTR_6 - Success
+-- Check size of sa_family_t
+-- Check size of sa_family_t - done
+-- Performing Test HAVE_FCNTL_O_NONBLOCK
+-- Performing Test HAVE_FCNTL_O_NONBLOCK - Success
+-- Performing Test HAVE_IOCTLSOCKET
+-- Performing Test HAVE_IOCTLSOCKET - Failed
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL - Failed
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO
+-- Performing Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO - Failed
+-- Performing Test HAVE_IOCTLSOCKET_FIONBIO
+-- Performing Test HAVE_IOCTLSOCKET_FIONBIO - Failed
+-- Performing Test HAVE_IOCTL_FIONBIO
+-- Performing Test HAVE_IOCTL_FIONBIO - Success
+-- Performing Test HAVE_IOCTL_SIOCGIFADDR
+-- Performing Test HAVE_IOCTL_SIOCGIFADDR - Success
+-- Performing Test HAVE_SETSOCKOPT_SO_NONBLOCK
+-- Performing Test HAVE_SETSOCKOPT_SO_NONBLOCK - Failed
+-- Performing Test HAVE_O_NONBLOCK
+-- Performing Test HAVE_O_NONBLOCK - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_3
+-- Performing Test HAVE_GETHOSTBYNAME_R_3 - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_5
+-- Performing Test HAVE_GETHOSTBYNAME_R_5 - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_6
+-- Performing Test HAVE_GETHOSTBYNAME_R_6 - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_3_REENTRANT
+-- Performing Test HAVE_GETHOSTBYNAME_R_3_REENTRANT - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_5_REENTRANT
+-- Performing Test HAVE_GETHOSTBYNAME_R_5_REENTRANT - Failed
+-- Performing Test HAVE_GETHOSTBYNAME_R_6_REENTRANT
+-- Performing Test HAVE_GETHOSTBYNAME_R_6_REENTRANT - Failed
+-- Performing Test HAVE_IN_ADDR_T
+-- Performing Test HAVE_IN_ADDR_T - Success
+-- Performing Test HAVE_BOOL_T
+-- Performing Test HAVE_BOOL_T - Success
+-- Performing Test STDC_HEADERS
+-- Performing Test STDC_HEADERS - Success
+-- Performing Test HAVE_FILE_OFFSET_BITS
+-- Performing Test HAVE_FILE_OFFSET_BITS - Success
+-- Performing Test HAVE_ATOMIC
+-- Performing Test HAVE_ATOMIC - Success
+-- Check size of off_t
+-- Check size of off_t - done
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Check size of curl_off_t
+-- Check size of curl_off_t - done
+-- Check size of curl_socket_t
+-- Check size of curl_socket_t - done
+-- Performing Test HAVE_WRITABLE_ARGV
+-- Performing Test HAVE_WRITABLE_ARGV - Success
+-- Performing Test HAVE_GLIBC_STRERROR_R
+-- Performing Test HAVE_GLIBC_STRERROR_R - Failed
+-- Performing Test HAVE_POSIX_STRERROR_R
+-- Performing Test HAVE_POSIX_STRERROR_R - Success
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC - Success
+-- Performing Test HAVE_BUILTIN_AVAILABLE
+-- Performing Test HAVE_BUILTIN_AVAILABLE - Success
+-- Check size of struct sockaddr_storage
+-- Check size of struct sockaddr_storage - done
+-- Performing Test HAVE_MSG_NOSIGNAL
+-- Performing Test HAVE_MSG_NOSIGNAL - Success
+-- Performing Test HAVE_STRUCT_TIMEVAL
+-- Performing Test HAVE_STRUCT_TIMEVAL - Success
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC_RAW
+-- Performing Test HAVE_CLOCK_GETTIME_MONOTONIC_RAW - Success
+-- Protocols: dict file ftp gopher http imap ipfs ipns ldap ldaps mqtt pop3 rtsp scp sftp smtp telnet tftp
+-- Features: alt-svc AsynchDNS HTTP2 IDN IPv6 Largefile libz PSL threadsafe UnixSockets
+-- Enabled SSL backends: 
+-- Configuring done (16.1s)
+-- Generating done (0.9s)
+-- Build files have been written to: /usr/src/curl-build
+
+[  0%] Building C object lib/CMakeFiles/libcurl_shared.dir/escape.c.o
+/usr/src/curl-8.10.1/lib/escape.c:240:3: error: call to undeclared function 'curlx_dyn_init'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  240 |   curlx_dyn_init(&out, CURL_MAX_INPUT_LENGTH);
+      |   ^
+/usr/src/curl-8.10.1/lib/escape.c:240:3: note: did you mean 'Curl_dyn_init'?
+/usr/src/curl-8.10.1/lib/dynbuf.h:57:6: note: 'Curl_dyn_init' declared here
+   57 | void Curl_dyn_init(struct dynbuf *s, size_t toobig);
+      |      ^
+/usr/src/curl-8.10.1/lib/escape.c:241:49: error: use of undeclared identifier 'REJECT_CTRL_MISSING'
+  241 |   if(Curl_urldecode(s, 0, &out.bufr, &out.leng, REJECT_CTRL_MISSING))
+      |                                                 ^
+/usr/src/curl-8.10.1/lib/escape.c:243:15: error: no member named 'escape_depth' in 'struct UrlState'
+  243 |   data->state.escape_depth++;
+      |   ~~~~~~~~~~~ ^
+/usr/src/curl-8.10.1/lib/escape.c:244:18: error: expected ';' after return statement
+  244 |   return CURLE_OK
+      |                  ^
+      |                  ;
+4 errors generated.
+make[3]: *** [lib/CMakeFiles/libcurl_shared.dir/escape.c.o] Error 1
+make[2]: *** [lib/CMakeFiles/libcurl_shared.dir/all] Error 2
+make[1]: *** [src/CMakeFiles/curl.dir/rule] Error 2
+make: *** [curl] Error 2
