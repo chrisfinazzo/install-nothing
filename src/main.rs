@@ -4,6 +4,7 @@ mod config;
 mod deno_logs;
 mod installer;
 mod kernel_logs;
+mod log_corpus;
 mod log_generator;
 mod messages;
 mod stages;
