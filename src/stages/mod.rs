@@ -8,6 +8,7 @@ mod cmake;
 mod compilation;
 mod container;
 mod database;
+mod defrag;
 mod deno;
 mod drivers;
 mod filesystem;
@@ -34,6 +35,7 @@ pub use cmake::CmakeStage;
 pub use compilation::CompilationStage;
 pub use container::ContainerStage;
 pub use database::DatabaseStage;
+pub use defrag::DefragStage;
 pub use deno::DenoStage;
 pub use drivers::DriversStage;
 pub use filesystem::FilesystemStage;
@@ -76,6 +78,7 @@ pub fn selected_stages(stages: &[Stage]) -> Vec<Box<dyn InstallationStage>> {
             Stage::Autotools => Box::new(AutotoolsStage::new(config.autotools.clone())),
             Stage::Cmake => Box::new(CmakeStage::new(config.cmake.clone())),
             Stage::Deno => Box::new(DenoStage::new()),
+            Stage::Defrag => Box::new(DefragStage::new(config.defrag.clone())),
             Stage::Database => Box::new(DatabaseStage),
             Stage::Xorg => Box::new(XorgStage),
             Stage::Services => Box::new(ServicesStage),

@@ -10,6 +10,8 @@ pub enum Stage {
     Bootloader,
     /// Filesystem setup
     Filesystem,
+    /// Disk defragmentation
+    Defrag,
     /// System installation
     System,
     /// Network configuration
@@ -56,6 +58,7 @@ impl Stage {
             Stage::Boot,
             Stage::Bootloader,
             Stage::Filesystem,
+            Stage::Defrag,
             Stage::System,
             Stage::Network,
             Stage::Drivers,
