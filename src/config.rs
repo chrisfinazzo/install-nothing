@@ -6,6 +6,7 @@ pub struct SimulationConfig {
     pub autotools: AutotoolsConfig,
     pub cmake: CmakeConfig,
     pub cloud: CloudConfig,
+    pub defrag: DefragConfig,
     pub container: ContainerConfig,
     pub bios: BiosConfig,
     pub boot: BootConfig,
@@ -19,6 +20,7 @@ impl Default for SimulationConfig {
             autotools: AutotoolsConfig::default(),
             cmake: CmakeConfig::default(),
             cloud: CloudConfig::default(),
+            defrag: DefragConfig::default(),
             container: ContainerConfig::default(),
             bios: BiosConfig::default(),
             boot: BootConfig::default(),
@@ -267,6 +269,55 @@ impl Default for CmakeConfig {
             build_delay_range: 60..220,
             link_duration_range: 600..1800,
             retry_delay: 1500,
+        }
+    }
+}
+
+#[derive(Clone)]
+pub struct DefragConfig {
+    pub volume: &'static str,
+    pub filesystem: &'static str,
+    pub total_clusters: u64,
+    pub grid_max_width: usize,
+    pub grid_height: usize,
+    pub fill_ratio: f64,
+    pub unmovable_count: usize,
+    pub bad_cluster_chance: f64,
+    pub restart_chance: f64,
+    pub max_restarts: usize,
+    pub restart_scatter: f64,
+    pub restart_hold: u64,
+    pub target_frames: usize,
+    pub clusters_per_frame: Range<usize>,
+    pub frame_delay_range: Range<u64>,
+    pub analyze_delay: u64,
+    pub initial_eta_minutes: f64,
+    pub eta_spike_chance: f64,
+    pub eta_spike_factor: Range<f64>,
+}
+
+impl Default for DefragConfig {
+    fn default() -> Self {
+        Self {
+            volume: "C:",
+            filesystem: "FAT32",
+            total_clusters: 2_097_152,
+            grid_max_width: 64,
+            grid_height: 12,
+            fill_ratio: 0.62,
+            unmovable_count: 6,
+            bad_cluster_chance: 0.35,
+            restart_chance: 0.012,
+            max_restarts: 2,
+            restart_scatter: 0.7,
+            restart_hold: 2200,
+            target_frames: 90,
+            clusters_per_frame: 2..9,
+            frame_delay_range: 45..110,
+            analyze_delay: 2200,
+            initial_eta_minutes: 11.0,
+            eta_spike_chance: 0.05,
+            eta_spike_factor: 1.4..3.2,
         }
     }
 }
