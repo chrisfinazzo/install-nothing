@@ -1,4 +1,4 @@
-# install-nothing
+# Install-nothing
 
 A terminal application that simulates installing things. It doesn't actually install anything.
 
@@ -15,13 +15,19 @@ chmod +x install-nothing-*
 ./install-nothing-linux-x86_64
 ```
 
+### Homebrew
+
+```bash
+brew install install-nothing
+```
+
 ### Build from source
 
 ```bash
 cargo run --release
 ```
 
-Press Ctrl+C to stop.
+Press `Ctrl+C` to stop.
 
 ### Pick what to install
 
