@@ -54,6 +54,20 @@ Run
 ```bash
 docker run -it --rm --init install-nothing
 ```
+
+
+## Nix
+
+Install
+```bash
+nix profile install github:buyukakyuz/install-nothing
+```
+
+Run
+```bash
+nix run install github:buyukakyuz/install-nothing
+```
+
 ## License
 
 Do whatever you want with it. Well, except for movies. If you use this in a movie, credit me or something.
